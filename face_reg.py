@@ -65,7 +65,7 @@ def get_prediction(model, face):
     
     return model.predict(in_features)
 
-def is_match(known_embedding, candidate_embedding, verbose=0, thresh=0.5):
+def is_match(known_embedding, candidate_embedding, verbose=1, thresh=0.5):
     
     # calculate distance between embeddings
     score = cosine(known_embedding, candidate_embedding)
@@ -182,6 +182,12 @@ def run_model(known_file, known_name, test_files):
             
     model_3_acc /= len(match_1)
     print("Model 3 accuracy =", model_3_acc)
+    i = 0
+    for face in faces_1:
+        pyplot.subplot(1, len(faces_1), i+1)
+        pyplot.imshow(face)
+        i+=1
+    pyplot.show()
             
 
 if __name__ == '__main__':
