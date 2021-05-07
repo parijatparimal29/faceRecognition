@@ -29,11 +29,12 @@ To run the the face recognition models, use the below command on terminal.
 python face_rec.py --infile <dir_of_known> --files <dir_of_unknown> --v <0 or 1 for verbose>
 ```
 The difference in runtimes can be noted as shown below:
-![image](https://user-images.githubusercontent.com/54210698/117391915-fb6a5080-aebe-11eb-949a-843c421f838a.png)
+![image](https://user-images.githubusercontent.com/54210698/117392415-096ca100-aec0-11eb-892e-c925883f7a46.png)
+
 
 Model 1 uses MTCNN to detect faces and VGGface to recognize them. <br>
 Model 2 uses YOLO to detect faces and VGGface to recognize them.<br>
-Model 3 uses face_recognition library to detect faces recognize them. [Unsuccessful for files with multiple images - hence very small number of faces detected]
+Model 3 uses face_recognition library to detect faces recognize them. [Unsuccessful for files with multiple faces - hence very small number of faces detected]
 
 <br><br>
 Below are the outputs of MTCNN and YOLO models. We can see that MTCNN misclassifies 2 images, whereas the model with YOLO has 100% accuracy.
