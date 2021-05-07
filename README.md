@@ -38,6 +38,7 @@ Model 3 uses face_recognition library to detect faces recognize them. [Unsuccess
 <br><br>
 Below are the outputs of MTCNN and YOLO models. We can see that MTCNN misclassifies 2 images, whereas the model with YOLO has 100% accuracy.
 ![image](https://user-images.githubusercontent.com/54210698/117392192-9105e000-aebf-11eb-90ed-ea69312c4812.png)
+![image](https://user-images.githubusercontent.com/54210698/117392288-c27eab80-aebf-11eb-8a9b-966a300b71b9.png)
 
 ![image](https://user-images.githubusercontent.com/54210698/117392235-a3801980-aebf-11eb-9cbe-38be5b42bad8.png)
 
