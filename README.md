@@ -34,3 +34,11 @@ The difference in runtimes can be noted as shown below:
 Model 1 uses MTCNN to detect faces and VGGface to recognize them. <br>
 Model 2 uses YOLO to detect faces and VGGface to recognize them.<br>
 Model 3 uses face_recognition library to detect faces recognize them. [Unsuccessful for files with multiple images - hence very small number of faces detected]
+
+<br><br>
+Below are the outputs of MTCNN and YOLO models. We can see that MTCNN misclassifies 2 images, whereas the model with YOLO has 100% accuracy.
+![image](https://user-images.githubusercontent.com/54210698/117392192-9105e000-aebf-11eb-90ed-ea69312c4812.png)
+
+![image](https://user-images.githubusercontent.com/54210698/117392235-a3801980-aebf-11eb-9cbe-38be5b42bad8.png)
+
+
