@@ -19,7 +19,7 @@ pip install cv2
 pip install tensorflow
 ```
 
-First we need to load pretrained weights.
+First we need to load pretrained weights. (After cloning the repositiry)
 ```bash
 chmod +x weights.sh
 bash weights.sh
@@ -28,6 +28,9 @@ To run the the face recognition models, use the below command on terminal.
 ```bash
 python face_rec.py --infile <dir_of_known> --files <dir_of_unknown> --v <0 or 1 for verbose>
 ```
+
+The experiments can be seen face_rec_demo.ipynb file.
+<br>
 The difference in runtimes can be noted as shown below:
 ![image](https://user-images.githubusercontent.com/54210698/117392415-096ca100-aec0-11eb-892e-c925883f7a46.png)
 
