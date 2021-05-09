@@ -209,7 +209,7 @@ def extract_faces_with_YOLO(net, filename):
 def model_2(model, known_dir, unknown_dir, verbose):
     
     cfg = 'yolov3-face.cfg'
-    wts = 'yolov3-wider_16000.weights'
+    wts = 'model-weight/yolov3-wider_16000.weights'
     net = cv2.dnn.readNetFromDarknet(cfg, wts)
     net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
     net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
