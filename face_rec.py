@@ -286,7 +286,6 @@ def model_3(model, known_dir, unknown_dir, verbose=0):
                 (top, right, bottom, left) = face_recognition.face_locations(img)[0]
                 matching_faces.append(img[top:bottom, left:right])
                 match.append(known_names[i])
-        pyplot.show()
         
         time_to_run.append(time.time() - start_time)
             
